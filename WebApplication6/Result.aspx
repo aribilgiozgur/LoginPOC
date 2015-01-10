@@ -8,9 +8,12 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
+    <div ID="loginDiv" runat="server" visible="false">
         <asp:Label ID="lblUserName" runat="server" Text=""></asp:Label><br />
         <asp:LinkButton ID="lnkEndSession" runat="server" OnClick="lnkEndSession_Click">Çıkış Yap</asp:LinkButton>
+    </div>
+        <div ID="anonimDiv" runat="server" visible="false">
+       <p>HATA! Lütfen login olup geliniz!</p>
     </div>
     </form>
 </body>

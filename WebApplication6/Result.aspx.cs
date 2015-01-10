@@ -26,10 +26,12 @@ namespace WebApplication6
              {
                  UygulamaUser user = (UygulamaUser)Session["userData"];
                  lblUserName.Text = user.getUserName();
+                 loginDiv.Visible = true;
              }
              else
              {
-                 Response.Redirect("Login.aspx");
+                 anonimDiv.Visible = true;
+                 //Response.Redirect("Login.aspx");
              }
              
              
